@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1 className="text-3xl font-bold underline">Hello,web!</h1>;
+  return (
+    <div className="w-full h-full">
+      <div>123</div>
+    </div>
+  )
 }
