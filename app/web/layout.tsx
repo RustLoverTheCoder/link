@@ -10,11 +10,5 @@ export default async function DashboardLayout({
   children: React.ReactNode;
 }) {
   const res = await login();
-
-  return (
-    <section>
-      <div>{res?.name}</div>
-      <Suspense fallback={<Loading />}>{children}</Suspense>
-    </section>
-  );
+  return <Suspense fallback={<Loading />}>{children}</Suspense>;
 }
