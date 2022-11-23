@@ -3,7 +3,6 @@ import { headers } from 'next/headers'
 import './globals.css'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  console.log('cookie', headers().get('cookie'))
   return (
     <html lang="en">
       {/*
