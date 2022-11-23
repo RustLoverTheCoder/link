@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -6,5 +6,5 @@ export default function Home() {
       Hello, Next.js!
       <Link href="/web">213</Link>
     </h1>
-  );
+  )
 }
