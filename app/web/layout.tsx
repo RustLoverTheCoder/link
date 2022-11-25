@@ -8,10 +8,11 @@ import './page.css'
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const res = await login()
-  const user = await getCurrentUser()
-  if (!user) {
-    return notFound()
-  }
+  console.log('res', res)
+  // const user = await getCurrentUser()
+  // if (!user) {
+  //   return notFound()
+  // }
   return (
     <div className="flex h-full w-full">
       <div className="flex h-full w-[72px] flex-col items-center space-y-2 bg-white py-6 dark:bg-[#202225]">

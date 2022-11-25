@@ -1,7 +1,7 @@
-import request from "../request";
+import serverRequest from '../serverRequest'
 
 const login = async () => {
-  return await request({ url: "/api/hello" });
-};
+  return await serverRequest({ url: '/api/hello' })
+}
 
-export { login };
+export { login }

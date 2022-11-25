@@ -2,7 +2,7 @@ import 'server-only'
 import { headers } from 'next/headers'
 import { preHost } from 'config'
 
-const request = async ({ url, ...arg }: { url: string }) => {
+const serverRequest = async ({ url, ...arg }: { url: string }) => {
   const headersInstance = headers()
   const host = headersInstance.get('host')
   const authorization = headersInstance.get('authorization')
@@ -17,4 +17,4 @@ const request = async ({ url, ...arg }: { url: string }) => {
   return resp.json()
 }
 
-export default request
+export default serverRequest
