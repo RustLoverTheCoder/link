@@ -1,3 +1,4 @@
-import Avatar from './Avatar'
+import Avatar from './left/Avatar'
+import List from './left/list'
 
-export { Avatar }
+export { Avatar, List }
