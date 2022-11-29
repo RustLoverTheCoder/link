@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   [data-nextjs-scroll-focus-boundary] {
     @apply contents;
@@ -10,7 +9,7 @@
 
   html,
   body {
-    @apply p-0 m-0;
+    @apply m-0 p-0;
   }
 
   a {
@@ -32,4 +31,13 @@
     color: white;
     background: black;
   }
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
 }
