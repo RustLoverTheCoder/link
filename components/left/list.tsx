@@ -1,11 +1,12 @@
 'use client'
 
 import Avatar from './Avatar'
-import { useVirtualizer } from '@tanstack/react-virtual'
+import { useVirtualizer, useWindowVirtualizer } from '@tanstack/react-virtual'
 import React, { memo, useRef } from 'react'
+import { VirtualItem } from 'components/type'
 
 const list = () => {
-  const parentRef = useRef<HTMLDivElement>()
+  const parentRef = useRef<HTMLDivElement>(null)
 
   const rowVirtualizer = useVirtualizer({
     count: 10,
@@ -23,8 +24,7 @@ const list = () => {
           height: `${rowVirtualizer.getTotalSize()}px`,
         }}
       >
-        {/* Only the visible items in the virtualizer, manually positioned to be in view */}
-        {rowVirtualizer.getVirtualItems().map((virtualItem, index) => (
+        {rowVirtualizer.getVirtualItems().map((virtualItem: VirtualItem) => (
           <div
             key={virtualItem.key}
             className="absolute top-0 left-0 flex w-full items-center justify-center"
