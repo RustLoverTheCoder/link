@@ -1,11 +1,11 @@
 'use client'
 
 import Avatar from './Avatar'
-import { useVirtualizer, useWindowVirtualizer } from '@tanstack/react-virtual'
+import { useVirtualizer } from '@tanstack/react-virtual'
 import React, { memo, useRef } from 'react'
 import { VirtualItem } from 'components/type'
 
-const list = () => {
+const List = () => {
   const parentRef = useRef<HTMLDivElement>(null)
 
   const rowVirtualizer = useVirtualizer({
@@ -40,4 +40,4 @@ const list = () => {
     </div>
   )
 }
-export default memo(list)
+export default memo(List)
