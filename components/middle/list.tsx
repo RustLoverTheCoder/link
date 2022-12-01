@@ -1,8 +1,7 @@
 'use client'
 
-import Avatar from './Avatar'
 import React, { memo, useRef } from 'react'
-
+import Channel from './channel'
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { VirtualItem } from 'components/type'
 
@@ -10,15 +9,14 @@ const List = () => {
   const parentRef = useRef<HTMLDivElement>(null)
 
   const rowVirtualizer = useVirtualizer({
-    count: 10,
+    count: 200,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 56,
+    estimateSize: () => 40,
     debug: true,
     initialRect: { width: 72, height: 700 },
   })
-
   return (
-    <div className="hidden-scrollbar relative w-full overflow-y-auto" ref={parentRef}>
+    <div className="hidden-scrollbar absolute top-0 right-0 bottom-0 left-0 overflow-y-auto" ref={parentRef}>
       <div
         className="relative w-full"
         style={{
@@ -34,11 +32,12 @@ const List = () => {
               transform: `translateY(${virtualItem.start}px)`,
             }}
           >
-            <Avatar />
+            <div className="w-full">213</div>
           </div>
         ))}
       </div>
     </div>
   )
 }
+
 export default memo(List)
