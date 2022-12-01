@@ -11,9 +11,9 @@ const List = () => {
   const rowVirtualizer = useVirtualizer({
     count: 200,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 40,
-    debug: true,
-    initialRect: { width: 72, height: 700 },
+    estimateSize: () => 34,
+    debug: false,
+    initialRect: { width: 72, height: 1080 },
   })
   return (
     <div className="hidden-scrollbar absolute top-0 right-0 bottom-0 left-0 overflow-y-auto" ref={parentRef}>
@@ -32,7 +32,7 @@ const List = () => {
               transform: `translateY(${virtualItem.start}px)`,
             }}
           >
-            <div className="w-full">213</div>
+            <Channel />
           </div>
         ))}
       </div>

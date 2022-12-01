@@ -2,8 +2,9 @@ import React, { memo } from 'react'
 
 const Channel = () => {
   return (
-    <div>
-      <div>123</div>
+    <div className="flex h-full w-full items-center">
+      <div></div>
+      <div>123213</div>
     </div>
   )
 }
