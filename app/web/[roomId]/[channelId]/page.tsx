@@ -7,7 +7,7 @@ export default function Page({ params }: { params: { channelId: string } }) {
       <div className="relative flex h-full w-full flex-col">
         <RightHeader />
         <div className="flex-1 bg-red-200">123</div>
-        <div className="relative max-h-[300px] min-h-[68px] w-full px-4">
+        <div className="relative min-h-[68px] w-full px-4">
           <Composer />
         </div>
       </div>

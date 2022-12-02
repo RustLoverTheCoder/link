@@ -41,3 +41,8 @@
 .hidden-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+
+.ProseMirror {
+  outline: transparent;
+}
