@@ -1,14 +1,15 @@
 import React, { memo } from 'react'
-import { BsPlusCircleFill, BsFillEmojiSmileFill, BsFillFileEarmarkFill } from 'react-icons/bs'
+import { BsFillEmojiSmileFill, BsFillFileEarmarkFill } from 'react-icons/bs'
 import { FaMicrophone } from 'react-icons/fa'
 import Editor from './editor'
+import Plus from './plus'
 
 const Composer = () => {
   return (
     <div className="editor-container flex min-h-[44px] rounded-lg" style={{ background: 'rgb(64,68,75)' }}>
       <div className="h-full min-h-[44px] w-14">
         <div className="flex h-[44px] w-14 items-center justify-center">
-          <BsPlusCircleFill className="h-6 w-6 text-[#b9bbbe]" />
+          <Plus />
         </div>
       </div>
       <div className="min-h-[44px] w-full">
