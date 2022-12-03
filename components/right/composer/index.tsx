@@ -2,7 +2,10 @@ import React, { memo } from 'react'
 import { BsFillEmojiSmileFill, BsFillFileEarmarkFill } from 'react-icons/bs'
 import { FaMicrophone } from 'react-icons/fa'
 import Editor from './editor'
+import Emoji from './emoji'
 import Plus from './plus'
+import File from './file'
+import Mic from './mic'
 
 const Composer = () => {
   return (
@@ -19,13 +22,13 @@ const Composer = () => {
       </div>
       <div className="flex h-full min-h-[44px] items-center space-x-4 pr-4">
         <div className="flex h-[44px] w-auto items-center justify-center">
-          <BsFillEmojiSmileFill className="h-6 w-6 text-[#b9bbbe]" />
+          <Emoji />
         </div>
         <div className="flex h-[44px] w-auto items-center justify-center">
-          <BsFillFileEarmarkFill className="h-6 w-6 text-[#b9bbbe]" />
+          <File />
         </div>
         <div className="flex h-[44px] w-auto items-center justify-center">
-          <FaMicrophone className="h-6 w-6 text-[#b9bbbe]" />
+          <Mic />
         </div>
       </div>
     </div>
