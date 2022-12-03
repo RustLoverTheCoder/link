@@ -1,8 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/react': ^1.7.4
   '@tanstack/react-virtual': 3.0.0-beta.9
   '@tiptap/extension-bullet-list': 2.0.0-beta.204
+  '@tiptap/extension-placeholder': 2.0.0-beta.204
   '@tiptap/react': 2.0.0-beta.204
   '@tiptap/starter-kit': 2.0.0-beta.204
   '@types/node': 18.11.9
@@ -27,8 +29,10 @@ specifiers:
   typescript: 4.9.3
 
 dependencies:
+  '@headlessui/react': 1.7.4_biqbaboplfbrettd7655fr4n2y
   '@tanstack/react-virtual': 3.0.0-beta.9_react@18.2.0
   '@tiptap/extension-bullet-list': 2.0.0-beta.204
+  '@tiptap/extension-placeholder': 2.0.0-beta.204
   '@tiptap/react': 2.0.0-beta.204_biqbaboplfbrettd7655fr4n2y
   '@tiptap/starter-kit': 2.0.0-beta.204
   '@types/node': 18.11.9
@@ -86,6 +90,18 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@headlessui/react/1.7.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-D8n5yGCF3WIkPsjEYeM8knn9jQ70bigGGb5aUvN6y4BGxcT3OcOQOKcM3zRGllRCZCFxCZyQvYJF6ZE7bQUOyQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.7:
@@ -458,6 +474,16 @@ packages:
       '@tiptap/core': ^2.0.0-beta.193
     dependencies:
       '@tiptap/core': 2.0.0-beta.204
+    dev: false
+
+  /@tiptap/extension-placeholder/2.0.0-beta.204:
+    resolution: {integrity: sha512-gMSlqb7C3oB2yDegJCKF4e9ObC+nSOZT1kD/PGyrgfmTbG3jELzpHqydomf9x3NcP7y/eimgBzTCw8YyySIP/w==}
+    peerDependencies:
+      '@tiptap/core': ^2.0.0-beta.193
+    dependencies:
+      prosemirror-model: 1.18.3
+      prosemirror-state: 1.4.2
+      prosemirror-view: 1.29.1
     dev: false
 
   /@tiptap/extension-strike/2.0.0-beta.204_bv566pzu4gfcw3675d5jwhi56i:
