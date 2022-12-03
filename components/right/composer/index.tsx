@@ -25,9 +25,6 @@ const Composer = () => {
           <Emoji />
         </div>
         <div className="flex h-[44px] w-auto items-center justify-center">
-          <File />
-        </div>
-        <div className="flex h-[44px] w-auto items-center justify-center">
           <Mic />
         </div>
       </div>

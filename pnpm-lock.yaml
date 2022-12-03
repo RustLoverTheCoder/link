@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@tanstack/react-virtual': 3.0.0-beta.9
+  '@tiptap/extension-bullet-list': 2.0.0-beta.204
   '@tiptap/react': 2.0.0-beta.204
   '@tiptap/starter-kit': 2.0.0-beta.204
   '@types/node': 18.11.9
@@ -27,6 +28,7 @@ specifiers:
 
 dependencies:
   '@tanstack/react-virtual': 3.0.0-beta.9_react@18.2.0
+  '@tiptap/extension-bullet-list': 2.0.0-beta.204
   '@tiptap/react': 2.0.0-beta.204_biqbaboplfbrettd7655fr4n2y
   '@tiptap/starter-kit': 2.0.0-beta.204
   '@types/node': 18.11.9
@@ -323,6 +325,12 @@ packages:
       prosemirror-state: 1.4.2
       prosemirror-view: 1.29.1
       tippy.js: 6.3.7
+    dev: false
+
+  /@tiptap/extension-bullet-list/2.0.0-beta.204:
+    resolution: {integrity: sha512-q8TtC+6wHG5bJ4Fj6h+7rIB5aL+G5214woEKRZNmRpcW4y4ZI2tTwNgxLy9cgEHgV31FwL6j6wpzYxRWwJwbeQ==}
+    peerDependencies:
+      '@tiptap/core': ^2.0.0-beta.193
     dev: false
 
   /@tiptap/extension-bullet-list/2.0.0-beta.204_bv566pzu4gfcw3675d5jwhi56i:
