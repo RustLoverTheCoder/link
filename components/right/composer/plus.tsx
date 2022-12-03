@@ -22,7 +22,7 @@ const Plus = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute bottom-[42px] -left-4 z-10">
+              <Popover.Panel className="absolute bottom-[42px] -left-4 z-50">
                 <div className="h-[78px] w-[216px] rounded-lg bg-[rgb(64,68,75)]">213</div>
               </Popover.Panel>
             </Transition>

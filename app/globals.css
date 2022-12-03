@@ -17,6 +17,14 @@
     text-decoration: none;
   }
 
+  button {
+    @apply flex items-center justify-center outline-none;
+  }
+
+  button:focus {
+    @apply outline-none;
+  }
+
   * {
     box-sizing: border-box;
   }
