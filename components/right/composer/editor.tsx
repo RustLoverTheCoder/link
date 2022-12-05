@@ -1,8 +1,8 @@
 'use client'
+
 import React, { memo } from 'react'
 import { EditorContent, useEditor, Editor as EditorType } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
-// @ts-ignore
 import BulletList from '@tiptap/extension-bullet-list'
 import Placeholder from '@tiptap/extension-placeholder'
 

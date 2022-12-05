@@ -1,10 +1,7 @@
 import React, { memo } from 'react'
-import { BsFillEmojiSmileFill, BsFillFileEarmarkFill } from 'react-icons/bs'
-import { FaMicrophone } from 'react-icons/fa'
 import Editor from './editor'
 import Emoji from './emoji'
 import Plus from './plus'
-import File from './file'
 import Mic from './mic'
 
 const Composer = () => {

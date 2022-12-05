@@ -8,9 +8,6 @@ export default function Home() {
         Hello, Next.js!
         <Link href="/web">213</Link>
       </h1>
-      <div className="relative min-h-[68px] w-full px-4">
-        <Composer />
-      </div>
     </div>
   )
 }

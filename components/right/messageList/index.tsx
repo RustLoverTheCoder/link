@@ -14,6 +14,7 @@ const MessageList = () => {
     debug: false,
     initialRect: { width: 72, height: 700 },
   })
+
   return (
     <div className="relative h-full w-full">
       <div className="hidden-scrollbar absolute top-0 right-0 bottom-0 left-0 overflow-y-auto" ref={parentRef}>
