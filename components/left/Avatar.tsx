@@ -1,6 +1,5 @@
 import React, { memo } from 'react'
 import Image from 'next/image'
-import vel from 'public/avatar.jpeg'
 
 const Avatar = () => {
   return (
